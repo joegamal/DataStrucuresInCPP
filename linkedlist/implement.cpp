@@ -21,6 +21,15 @@ int main(){
     cout << linkedlist.first_node() << endl;
     cout << linkedlist.last_node() << endl;
 
+
+    cout << linkedlist.at(5) << endl;
+    linkedlist.insert_at(5, 60);
+
+    cout << linkedlist.at(5) << endl;
+
+
+
+
     
 
 
