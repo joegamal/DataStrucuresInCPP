@@ -93,15 +93,12 @@ void tree::deleteNode(Node* node)
     if (node == nullptr)
         return;
         
-    // First delete both subtrees
     deleteNode(node->left);
     deleteNode(node->right);
     
-    // Then delete the node itself
     delete node;
 }
 
-// Implement the destructor
 tree::~tree()
 {
     deleteNode(root);
